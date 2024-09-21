@@ -1,0 +1,12 @@
+.header {
+	display: flex;
+	gap: 2rem;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5rem 2rem;
+	background-color: var(--white);
+	position: sticky;
+	z-index: 3;
+	top: 0;
+	box-shadow: var(--input-shadow);
+}

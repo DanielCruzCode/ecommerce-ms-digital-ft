@@ -1,0 +1,27 @@
+.search-bar {
+	display: flex;
+	align-items: center;
+	background-color: var(--gray);
+	padding: .2rem .7rem;
+	border-radius: var(--input-br);
+	flex-grow: 1;
+	max-width: 16rem;
+	transition: box-shadow 0.2s ease-in;
+}
+
+.search-bar:hover {
+	box-shadow: var(--input-shadow);
+}
+
+.search-bar:has(.search-bar__input:focus),
+.search-bar:has(.search-bar__input:focus-visible) {
+	outline: 2px solid var(--black);
+}
+
+.search-bar__input {
+	appearance: none;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	width: 100%;
+}
